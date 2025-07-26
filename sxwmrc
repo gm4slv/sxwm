@@ -13,7 +13,7 @@ snap_distance           : 5
 motion_throttle         : 60 # Set to screen refresh rate for smoothest motions
 should_float            : "pcmanfm", "obs"
 new_win_focus           : true
-warp_cursor             : true
+warp_cursor             : false
 can_swallow             : "st"
 can_be_swallowed        : "mpv", "sxiv"
 new_win_master          : false
@@ -56,9 +56,7 @@ call : mod + shift + k : master_prev
 
 # Master Area Resize
 call : mod + l : master_increase
-call : mod + right : master_increase
 call : mod + h : master_decrease
-call : mod + left : master_decrease
 
 # Stack Window Resize
 call : mod + ctrl + l : stack_increase
